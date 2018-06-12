@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 //stateless functional componenent, simpler than making an entire class component
+//can only do this if the component does not have 'state'
 const ChatHeader = () => {
     return(
         <div className="ChatHeader">
