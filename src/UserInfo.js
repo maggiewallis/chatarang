@@ -26,7 +26,8 @@ const styles = {
         width: "40px",
         height: "40px",
         backgroundImage: "url(https://api.adorable.io/avatars/285/bob@adorable.io)",
-        backgroundSize: "cover"
+        backgroundSize: "cover",
+        borderRadius: "20px",
     },
     user: {
         flex: 1

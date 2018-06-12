@@ -37,7 +37,7 @@ const styles = {
   h1: {
     color: 'white',
     fontSize: '1.2rem',
-    marginTop: 0,
+    marginTop: '0',
   },
 }
 
