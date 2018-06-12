@@ -1,23 +1,20 @@
-import React, { Component } from 'react'
+import React from 'react'
 
+import Message from './Message'
 
 const MessageList = () => {
-    const messages = [
-        { id: 1, userName: 'dstrus', body: 'Chatting up a storm, yo!'},
-        { id: 2, userName: 'dpalazzo', bosy: 'This guy is so annoying. I hate my job.'},
-    ]
-    
-    return (
-        <div className = 'MessageList'>
-            { messages.map(message => (
-                <div key={message.id}>
-                    {message.userName}: {message.body} 
-                </div>
-            ))
-            
-            }
-        </div>
-    )
+  const messages = [
+    { id: 1, userName: 'dstrus', body: 'Chatting up a storm, yo!' },
+    { id: 2, userName: 'dpalazzo', body: 'This guy is so annoying. I hate my job.' },
+  ]
+
+  return (
+    <div className="MessageList">
+      {
+        messages.map(msg => <Message key={msg.id} message={msg} />)
+      }
+    </div>
+  )
 }
 
 export default MessageList
