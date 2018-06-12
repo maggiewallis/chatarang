@@ -21,7 +21,7 @@ addMessage = (body) => {
     const messages = [...this.state.messages]
     messages.push({
         id: Date.now(),
-        userName: 'Ferris',
+        userName: this.props.user.userName,
         body,
     })
 
