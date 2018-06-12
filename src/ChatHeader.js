@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 //stateless functional componenent, simpler than making an entire class component
 //can only do this if the component does not have 'state'
