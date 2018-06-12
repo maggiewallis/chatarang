@@ -1,23 +1,12 @@
 import React from 'react'
 
+import RoomList from './RoomList'
+import UserInfo from './UserInfo'
+
 const Sidebar = (props) => {
   return (
-    <aside
-      className="Sidebar"
-      style={styles.sidebar}
-    >
-      <div
-        className="UserInfo"
-        style={styles.children}
-      >
-        <div className="Avatar"></div>
-        <div className="user">
-          {props.user.userName}
-        </div>
-        <a href="#">
-          <i className="fas fa-sign-out-alt"></i>
-        </a>
-      </div>
+    <aside className="Sidebar" style={styles.sidebar}>
+       <UserInfo style={styles.children} user={props.user} />
       <h1
         style={{
           ...styles.children,
@@ -26,16 +15,7 @@ const Sidebar = (props) => {
       >
         XTBC 18
       </h1>
-      <nav
-        className="RoomList"
-        style={styles.children}
-      >
-        <h2>Rooms</h2>
-        <ul>
-          <li><a href="#">general</a></li>
-          <li><a href="#">random</a></li>
-        </ul>
-      </nav>
+      <RoomList style={styles.children} />
     </aside>
   )
 }
