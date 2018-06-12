@@ -29,7 +29,6 @@ const styles = {
         color: "whitesmoke",
         textDecoration: "none"
     }
-    // missing a lia before and lia hover (they are in index.css)
 }
 
 export default RoomList
