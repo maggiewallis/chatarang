@@ -25,7 +25,7 @@ const styles = {
         marginRight: "0.5rem",
         width: "40px",
         height: "40px",
-        backgroundImage: " ",
+        backgroundImage: "url(https://api.adorable.io/avatars/285/bob@adorable.io)",
         backgroundSize: "cover"
     },
     user: {
