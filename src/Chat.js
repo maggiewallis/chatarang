@@ -30,13 +30,19 @@ addMessage = (body) => {
 
     render(){
         return(
-        <div className="Chat">
+        <div className="Chat" style={styles}>
             <ChatHeader />
             <MessageList messages={this.state.messages} />
             <MessageForm addMessage = {this.addMessage}/>
         </div>
         )
     }
+}
+
+const styles = {
+        flex: "1",
+        display: "flex",
+        flexDirection: "column",
 }
 
 export default Chat

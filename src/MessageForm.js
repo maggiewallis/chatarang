@@ -12,7 +12,7 @@ class MessageForm extends Component {
     handleSubmit = (event) => {
         event.preventDefault()
 
-        this.props.submit(this.state.body)
+        this.props.addMessage(this.state.body)
         this.setState({ body: "" })
     }
 
@@ -54,7 +54,7 @@ const styles = {
         border: "2px solid #999",
         borderRadius: "0.5rem",
         margin: "0.25rem",
-        padding: 0
+        padding: "0"
     },
     chatIcon: {
         display: "flex",
@@ -68,7 +68,7 @@ const styles = {
     input: {
         flex: 1,
         fontSize: "1.2rem",
-        border: 0
+        border: "0",
     },
     button: {
         fontSize: "1.5rem",
