@@ -1,45 +1,38 @@
-import React from "react"
+import React from 'react'
 
-const UserInfo = ({user, style}) => {
-    return (
-        <div className="UserInfo" style={{...style, ...styles.userInfo}}>
-            <div
-                className="Avatar"
-                style={styles.avatar}
-            ></div>
-            <div className="user" style={styles.user}>{user.userName}</div>
-            <a href="#" style={styles.a}>
-                <i className="fas fa-sign-out-alt"></i>
-            </a>
-        </div>
-    )
+import Avatar from './Avatar'
+import SignOut from './SignOut'
+
+const UserInfo = ({ user }) => {
+  return (
+    <div
+      className="UserInfo"
+      style={styles.info}
+    >
+      <Avatar user={user} style={styles.avatar} />
+      <div className="user" style={styles.user}>
+        {user.userName}
+      </div>
+      <SignOut />
+    </div>
+  )
 }
 
 const styles = {
-    userInfo: {
-        marginBottom: "1rem",
-        display: "flex",
-        alignItems: "center"
-    },
-    avatar: {
-        marginRight: "0.5rem",
-        width: "40px",
-        height: "40px",
-        backgroundImage: "url(https://api.adorable.io/avatars/285/bob@adorable.io)",
-        backgroundSize: "cover",
-        borderRadius: "20px",
-    },
-    user: {
-        flex: 1
-    },
-    a: {
-        border: 0,
-        padding: 0,
-        backgroundColor: "transparent",
-        color: "rgba(255, 255, 255, 0.6)",
-        fontSize: "1.2rem",
-        transition: "color 0.25s ease-out"
-    }
+  info: {
+    marginBottom: '1rem',
+    display: 'flex',
+    alignItems: 'center',
+    padding: '0 1rem',
+  },
+
+  avatar: {
+    marginRight: '0.5rem',
+  },
+
+  user: {
+    flex: 1,
+  },
 }
 
-export default UserInfo 
+export default UserInfo

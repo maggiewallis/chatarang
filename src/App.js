@@ -8,13 +8,14 @@ class App extends Component {
     user: {
       uid: '76547',
       userName: 'maggie',
+      email: 'maggie@aol.com',
     }
   }
 
   render() {
     return (
       <div className="App">
-        <Main user={this.state.user}/>
+        <Main user={this.state.user} />
       </div>
     )
   }
