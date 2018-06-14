@@ -3,18 +3,22 @@ import React from 'react'
 import UserInfo from './UserInfo'
 import RoomList from './RoomList'
 
-const Sidebar = ({ user, signOut }) => {
+const Sidebar = (props) => {
   return (
     <aside
       className="Sidebar"
       style={styles.sidebar}
     >
       <UserInfo
-        user={user}
-        signOut={signOut}
+        user={props.user}
+        signOut={props.signOut}
       />
       <h1 style={styles.h1}>XTBC 18</h1>
-      <RoomList />
+      <RoomList 
+        channels={props.channels}
+        swerveChannels = {props.swerveChannels}
+        addChannel = {props.addChannel}
+      />
     </aside>
   )
 }
