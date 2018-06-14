@@ -35,7 +35,11 @@ class Main extends Component {
             swerveChannels = {this.swerveChannels}
             // addChannel = {this.addChannel}
         />
-        <Chat user={this.props.user} />
+        <Chat 
+            user={this.props.user}
+            currentChannel = {this.state.currentChannel} 
+
+        />
       </div>
     )
   }
